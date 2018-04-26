@@ -16,19 +16,13 @@
                         </div>
                     </div>
                     <div class="row">
-                        <label class="col-lg-2 col-form-label">Password</label>
-                        <div class="col-lg-2">
-                            <input class="form-control" type="password" name="password" placeholder="Enter your password"/><br/>
-                        </div>
-                    </div>
-                    <div class="row">
                         <div class="col-sm-2">
                             <input type="submit" class="btn btn-primary" name="submit" value="Submit">
                         </div>
                     </div>
                     <br/><br/>
                     <div class="row">
-                        <div class="col-lg-4">
+                        <div class="col-lg-12">
                             <?php
                                 if (isset($_SESSION['logged_user']))
                                 {
@@ -37,7 +31,7 @@
 
                                 if(isset($_POST['submit']))
                                 {
-                                    if((empty($_POST['username'])) || (empty($_POST['password'])))
+                                    if((empty($_POST['username'])))
                                     {
                                         echo "<span class='alert alert-danger'>Please input your ID including 7 digits and a letter!</span>";
                                     }  
@@ -45,7 +39,7 @@
                                     {
                                     
                                         $username = $_POST['username'];
-                                        $password = $_POST['password'];
+                                        $password = randomPassword();
 
                                         $connection = connectToMySQL();
 
@@ -66,11 +60,12 @@
                                             mysqli_query($connection, $query)
                                             or die("Error in query: " . mysqli_error($connection));
 
-                                            echo "<span class='alert alert-success'>Your account has been created with the desired password.</span>";
+                                            echo "<div class='alert alert-success'>Your account has been created.<br/>You will recieve a temporary password by mail.</div>";
+                                            echo "Password for testing purposes: $password";
                                         }
                                         else
                                         {
-                                            echo "<span class='alert alert-danger'>Your ID is incorrect or an account is already registered!</span>";
+                                            echo "<div class='alert alert-danger'>Your ID is incorrect or an account is already registered!</div>";
                                         }
                                     }   
                                 }

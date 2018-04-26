@@ -37,7 +37,7 @@
                     </div>
                     <br/><br/>
                     <div class="row">
-                        <div class="col-lg-4">
+                        <div class="col-lg-12">
                             <?php
                                 if (isset($_SESSION['logged_user']))
                                 {
@@ -75,7 +75,7 @@
                                         }
                                         else
                                         {
-                                            echo "<span class='alert alert-danger'>Username or Password incorrect!</span>";
+                                            echo "<div class='alert alert-danger'>Username or Password incorrect!</div>";
                                         }
                                     }   
                                 }
