@@ -33,6 +33,62 @@
         return $username;
     }
 
+    function getInformationById($id, $column, $table)
+    {
+        $output = "N/a";
+
+        $connection = connectToMySQL();
+
+        $query = "SELECT * FROM $table
+                    WHERE ID = '$id'";
+
+        $result = mysqli_query($connection, $query)
+        or die("Error in query: " . mysqli_error($connection));
+
+        while ($row = mysqli_fetch_assoc($result))
+        {
+            $output = $row[$column];
+        }
+
+        if(!empty($output))
+        {
+            return $output;
+        }
+        else
+        {
+            return "N/a";
+        }
+        
+    }
+
+    function getForeignById($id, $column, $table, $foreignPK)
+    {
+        $output = "N/a";
+
+        $connection = connectToMySQL();
+
+        $query = "SELECT * FROM $table
+                    WHERE $foreignPK = $id";
+
+        $result = mysqli_query($connection, $query)
+        or die("Error in query: " . mysqli_error($connection));
+
+        while ($row = mysqli_fetch_assoc($result))
+        {
+            $output = $row[$column];
+        }
+
+        if(!empty($output))
+        {
+            return $output;
+        }
+        else
+        {
+            return "N/a";
+        }
+        
+    }
+
     function randomPassword()
     {
         $password = '';

@@ -14,7 +14,7 @@
                     <div class="row">
                         <label class="col-lg-1 col-form-label">Username</label>
                         <div class="col-lg-3">
-                            <input class="form-control" type="text" name="username" placeholder="Enter your ID Card number"/><br/>
+                            <input class="form-control" type="text" name="username" placeholder="Enter your username"/><br/>
                         </div>
                     </div>
                     <div class="row">
@@ -24,13 +24,13 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-sm-2">
+                        <div class="col-lg-2">
                         <a href="register.php" class="btn btn-success">Register</a>
                         </div>
-                        <div class="col-sm-1">
+                        <div class="col-lg-1">
                             <!-- Empty col for styling -->
                         </div>
-                        <div class="col-sm-2">
+                        <div class="col-lg-2">
                             <input type="submit" class="btn btn-primary" name="login" value="Login">
                         </div>
                         

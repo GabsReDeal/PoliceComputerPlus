@@ -81,5 +81,5 @@
 
 
 <?php
-    require("menu.php");
+    require("footer.php");
 ?>
