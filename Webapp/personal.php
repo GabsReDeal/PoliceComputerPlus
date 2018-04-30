@@ -40,19 +40,19 @@
                     <div class="input-group-prepend">
                         <span class="input-group-text" id="basic-addon1">Surname</span>
                     </div>
-                    <input class="form-control" type='text' value='<?php echo getInformationById($_SESSION['logged_user'], 'Surname', 'tbl_civilian');?>' readonly>
+                    <input class="form-control" type='text' value='<?php echo getInformationById('ID', $_SESSION['logged_user'], 'Surname', 'tbl_civilian');?>' readonly>
                 </div>
                 <div class="input-group mb-3 col-sm-4">
                     <div class="input-group-prepend">
                         <span class="input-group-text" id="basic-addon1">Name</span>
                     </div>
-                    <input class="form-control" type='text' value='<?php echo getInformationById($_SESSION['logged_user'], 'Name', 'tbl_civilian');?>' readonly>
+                    <input class="form-control" type='text' value='<?php echo getInformationById('ID', $_SESSION['logged_user'], 'Name', 'tbl_civilian');?>' readonly>
                 </div>
                 <div class="input-group mb-3 col-sm-4">
                     <div class="input-group-prepend">
                         <span class="input-group-text" id="basic-addon1">Middle</span>
                     </div>
-                    <input class="form-control" type='text' value='<?php echo getInformationById($_SESSION['logged_user'], 'Middle_Name', 'tbl_civilian');?>' readonly>
+                    <input class="form-control" type='text' value='<?php echo getInformationById('ID', $_SESSION['logged_user'], 'Middle_Name', 'tbl_civilian');?>' readonly>
                 </div>
             </div>
             <div class="row pt-3">
@@ -60,25 +60,25 @@
                     <div class="input-group-prepend">
                         <span class="input-group-text" id="basic-addon1">DoB</span>
                     </div>
-                    <input class="form-control" type='text' value='<?php echo getInformationById($_SESSION['logged_user'], 'DoB', 'tbl_civilian');?>' readonly>
+                    <input class="form-control" type='text' value='<?php echo getInformationById('ID', $_SESSION['logged_user'], 'DoB', 'tbl_civilian');?>' readonly>
                 </div>
                 <div class="input-group mb-3 col-lg-2">
                     <div class="input-group-prepend">
                         <span class="input-group-text" id="basic-addon1">Gender</span>
                     </div>
-                    <input class="form-control" type='text' value='<?php echo getInformationById($_SESSION['logged_user'], 'Gender', 'tbl_civilian');?>' readonly>
+                    <input class="form-control" type='text' value='<?php echo getInformationById('ID', $_SESSION['logged_user'], 'Gender', 'tbl_civilian');?>' readonly>
                 </div>
                 <div class="input-group mb-3 col-lg-3">
                     <div class="input-group-prepend">
                         <span class="input-group-text" id="basic-addon1">SSN</span>
                     </div>
-                    <input class="form-control" type='text' value='<?php echo getInformationById($_SESSION['logged_user'], 'SSN', 'tbl_civilian');?>' readonly>
+                    <input class="form-control" type='text' value='<?php echo getInformationById('ID', $_SESSION['logged_user'], 'SSN', 'tbl_civilian');?>' readonly>
                 </div>
                 <div class="input-group mb-3 col-lg-3">
                     <div class="input-group-prepend">
                         <span class="input-group-text" id="basic-addon1">Home</span>
                     </div>
-                    <input class="form-control" type='text' value='<?php echo getInformationById($_SESSION['logged_user'], 'Home_Phone', 'tbl_civilian');?>' readonly>
+                    <input class="form-control" type='text' value='<?php echo getInformationById('ID', $_SESSION['logged_user'], 'Home_Phone', 'tbl_civilian');?>' readonly>
                 </div>
             </div>
             <div class="row pt-3">
@@ -86,28 +86,26 @@
                     <div class="input-group-prepend">
                         <span class="input-group-text" id="basic-addon1">House</span>
                     </div>
-                    <input class="form-control" type='text' value='<?php echo getInformationById($_SESSION['logged_user'], 'House_Number_Name', 'tbl_civilian');?>' readonly>
+                    <input class="form-control" type='text' value='<?php echo getInformationById('ID', $_SESSION['logged_user'], 'House_Number_Name', 'tbl_civilian');?>' readonly>
                 </div>
                 <div class="input-group mb-3 col-lg-4">
                     <div class="input-group-prepend">
                         <span class="input-group-text" id="basic-addon1">Street</span>
                     </div>
-                    <input class="form-control" type='text' value='<?php echo getForeignById(getInformationById($_SESSION['logged_user'], 'Street_ID', 'tbl_civilian'), 'Street', 'tbl_street', 'Street_ID');?>' readonly>
+                    <input class="form-control" type='text' value='<?php echo getForeignById(getInformationById('ID', $_SESSION['logged_user'], 'Street_ID', 'tbl_civilian'), 'Street', 'tbl_street', 'Street_ID');?>' readonly>
                 </div>
                 <div class="input-group mb-3 col-lg-4">
                     <div class="input-group-prepend">
                         <span class="input-group-text" id="basic-addon1">Locality</span>
                     </div>
-                    <input class="form-control" type='text' value='<?php echo getForeignById(getForeignById(getInformationById($_SESSION['logged_user'], 'Street_ID', 'tbl_civilian'), 'Street_ID', 'tbl_street', 'Street_ID'), 'Locality', 'tbl_locality', 'Locality_ID');?>' readonly>
+                    <input class="form-control" type='text' value='<?php echo getForeignById(getForeignById(getInformationById('ID', $_SESSION['logged_user'], 'Street_ID', 'tbl_civilian'), 'Locality_ID', 'tbl_street', 'Street_ID'), 'Locality', 'tbl_locality', 'Locality_ID');?>' readonly>
                 </div>
             </div>
         </div>
         <div class="mx-auto">
             <a href="vehicle.php" class="btn btn-info mt-3 mb-3">View Vehicle Information</a>
         </div>
-    </div>
-    
-    
+    </div> 
 </div>
 
 
