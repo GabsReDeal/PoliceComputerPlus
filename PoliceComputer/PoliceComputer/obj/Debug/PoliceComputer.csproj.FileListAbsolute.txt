@@ -1,0 +1,34 @@
+\\main\stud_redir\a101059\mydocs\visual studio 2017\Projects\PoliceComputer\PoliceComputer\bin\Debug\PoliceComputer.exe.config
+\\main\stud_redir\a101059\mydocs\visual studio 2017\Projects\PoliceComputer\PoliceComputer\bin\Debug\PoliceComputer.exe
+\\main\stud_redir\a101059\mydocs\visual studio 2017\Projects\PoliceComputer\PoliceComputer\bin\Debug\PoliceComputer.pdb
+\\main\stud_redir\a101059\mydocs\visual studio 2017\Projects\PoliceComputer\PoliceComputer\obj\Debug\PoliceComputer.csprojResolveAssemblyReference.cache
+\\main\stud_redir\a101059\mydocs\visual studio 2017\Projects\PoliceComputer\PoliceComputer\obj\Debug\PoliceComputer.loginForm.resources
+\\main\stud_redir\a101059\mydocs\visual studio 2017\Projects\PoliceComputer\PoliceComputer\obj\Debug\PoliceComputer.Properties.Resources.resources
+\\main\stud_redir\a101059\mydocs\visual studio 2017\Projects\PoliceComputer\PoliceComputer\obj\Debug\PoliceComputer.csproj.GenerateResource.Cache
+\\main\stud_redir\a101059\mydocs\visual studio 2017\Projects\PoliceComputer\PoliceComputer\obj\Debug\PoliceComputer.exe
+\\main\stud_redir\a101059\mydocs\visual studio 2017\Projects\PoliceComputer\PoliceComputer\obj\Debug\PoliceComputer.pdb
+D:\Assignments\Projects\PoliceComputer\PoliceComputer\obj\Debug\PoliceComputer.csprojResolveAssemblyReference.cache
+D:\Assignments\Projects\PoliceComputer\PoliceComputer\obj\Debug\PoliceComputer.loginForm.resources
+D:\Assignments\Projects\PoliceComputer\PoliceComputer\obj\Debug\PoliceComputer.Properties.Resources.resources
+D:\Assignments\Projects\PoliceComputer\PoliceComputer\obj\Debug\PoliceComputer.csproj.GenerateResource.Cache
+D:\Assignments\Projects\PoliceComputer\PoliceComputer\obj\Debug\PoliceComputer.exe
+D:\Assignments\Projects\PoliceComputer\PoliceComputer\obj\Debug\PoliceComputer.pdb
+D:\Assignments\Projects\PoliceComputer\PoliceComputer\bin\Debug\PoliceComputer.exe.config
+D:\Assignments\Projects\PoliceComputer\PoliceComputer\bin\Debug\PoliceComputer.exe
+D:\Assignments\Projects\PoliceComputer\PoliceComputer\bin\Debug\PoliceComputer.pdb
+D:\Assignments\Projects\PoliceComputer\PoliceComputer\bin\Debug\MySql.Data.dll
+D:\Assignments\Projects\PoliceComputer\PoliceComputer\bin\Debug\MySql.Data.xml
+K:\Assignments\Projects\PoliceComputer\PoliceComputer\bin\Debug\PoliceComputer.exe.config
+K:\Assignments\Projects\PoliceComputer\PoliceComputer\bin\Debug\PoliceComputer.exe
+K:\Assignments\Projects\PoliceComputer\PoliceComputer\bin\Debug\PoliceComputer.pdb
+K:\Assignments\Projects\PoliceComputer\PoliceComputer\bin\Debug\MySql.Data.xml
+K:\Assignments\Projects\PoliceComputer\PoliceComputer\obj\Debug\PoliceComputer.csprojResolveAssemblyReference.cache
+K:\Assignments\Projects\PoliceComputer\PoliceComputer\obj\Debug\PoliceComputer.loginForm.resources
+K:\Assignments\Projects\PoliceComputer\PoliceComputer\obj\Debug\PoliceComputer.Properties.Resources.resources
+K:\Assignments\Projects\PoliceComputer\PoliceComputer\obj\Debug\PoliceComputer.csproj.GenerateResource.Cache
+K:\Assignments\Projects\PoliceComputer\PoliceComputer\obj\Debug\PoliceComputer.csproj.CoreCompileInputs.cache
+K:\Assignments\Projects\PoliceComputer\PoliceComputer\obj\Debug\PoliceComputer.exe
+K:\Assignments\Projects\PoliceComputer\PoliceComputer\obj\Debug\PoliceComputer.pdb
+K:\Assignments\Projects\PoliceComputer\PoliceComputer\obj\Debug\PoliceComputer.Civilian.resources
+K:\Assignments\Projects\PoliceComputer\PoliceComputer\obj\Debug\PoliceComputer.Menu.resources
+K:\Assignments\Projects\PoliceComputer\PoliceComputer\obj\Debug\PoliceComputer.csproj.CopyComplete
