@@ -52,6 +52,12 @@
     <Compile Include="Civilian.Designer.cs">
       <DependentUpon>Civilian.cs</DependentUpon>
     </Compile>
+    <Compile Include="Licence.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Licence.Designer.cs">
+      <DependentUpon>Licence.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -67,6 +73,11 @@
     <Compile Include="Methods.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Vehicle.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,6 +87,12 @@
     <EmbeddedResource Include="Civilian.resx">
       <DependentUpon>Civilian.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Licence.resx">
+      <DependentUpon>Licence.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.en-MT.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
@@ -84,14 +101,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
+    <EmbeddedResource Include="Vehicle.resx">
+      <DependentUpon>Vehicle.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -107,6 +122,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\logo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0035859M.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0162599M.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0423900L.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo1invert.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

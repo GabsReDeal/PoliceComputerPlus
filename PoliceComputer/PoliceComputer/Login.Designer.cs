@@ -29,105 +29,109 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(loginForm));
             this.txtUsername = new System.Windows.Forms.TextBox();
             this.btnLogin = new System.Windows.Forms.Button();
             this.txtPassword = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.errorLogin = new System.Windows.Forms.ErrorProvider(this.components);
             this.lblUsername = new System.Windows.Forms.Label();
             this.lblPassword = new System.Windows.Forms.Label();
             this.lblError = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.logo = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.errorLogin)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.logo)).BeginInit();
             this.SuspendLayout();
             // 
             // txtUsername
             // 
-            this.txtUsername.Location = new System.Drawing.Point(188, 242);
+            resources.ApplyResources(this.txtUsername, "txtUsername");
+            this.errorLogin.SetError(this.txtUsername, resources.GetString("txtUsername.Error"));
+            this.errorLogin.SetIconAlignment(this.txtUsername, ((System.Windows.Forms.ErrorIconAlignment)(resources.GetObject("txtUsername.IconAlignment"))));
+            this.errorLogin.SetIconPadding(this.txtUsername, ((int)(resources.GetObject("txtUsername.IconPadding"))));
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(147, 20);
-            this.txtUsername.TabIndex = 0;
             this.txtUsername.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Login_KeyPress);
             // 
             // btnLogin
             // 
-            this.btnLogin.Location = new System.Drawing.Point(188, 325);
+            resources.ApplyResources(this.btnLogin, "btnLogin");
+            this.errorLogin.SetError(this.btnLogin, resources.GetString("btnLogin.Error"));
+            this.errorLogin.SetIconAlignment(this.btnLogin, ((System.Windows.Forms.ErrorIconAlignment)(resources.GetObject("btnLogin.IconAlignment"))));
+            this.errorLogin.SetIconPadding(this.btnLogin, ((int)(resources.GetObject("btnLogin.IconPadding"))));
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(106, 23);
-            this.btnLogin.TabIndex = 2;
-            this.btnLogin.Text = "Login";
             this.btnLogin.UseVisualStyleBackColor = true;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(188, 278);
+            resources.ApplyResources(this.txtPassword, "txtPassword");
+            this.errorLogin.SetError(this.txtPassword, resources.GetString("txtPassword.Error"));
+            this.errorLogin.SetIconAlignment(this.txtPassword, ((System.Windows.Forms.ErrorIconAlignment)(resources.GetObject("txtPassword.IconAlignment"))));
+            this.errorLogin.SetIconPadding(this.txtPassword, ((int)(resources.GetObject("txtPassword.IconPadding"))));
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.PasswordChar = '*';
-            this.txtPassword.Size = new System.Drawing.Size(147, 20);
-            this.txtPassword.TabIndex = 1;
             this.txtPassword.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             this.txtPassword.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Login_KeyPress);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::PoliceComputer.Properties.Resources.logo1;
-            this.pictureBox1.Location = new System.Drawing.Point(117, 30);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(253, 170);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
             // 
             // errorLogin
             // 
             this.errorLogin.ContainerControl = this;
+            resources.ApplyResources(this.errorLogin, "errorLogin");
             // 
             // lblUsername
             // 
-            this.lblUsername.AutoSize = true;
-            this.lblUsername.Location = new System.Drawing.Point(124, 245);
+            resources.ApplyResources(this.lblUsername, "lblUsername");
+            this.errorLogin.SetError(this.lblUsername, resources.GetString("lblUsername.Error"));
+            this.lblUsername.ForeColor = System.Drawing.Color.White;
+            this.errorLogin.SetIconAlignment(this.lblUsername, ((System.Windows.Forms.ErrorIconAlignment)(resources.GetObject("lblUsername.IconAlignment"))));
+            this.errorLogin.SetIconPadding(this.lblUsername, ((int)(resources.GetObject("lblUsername.IconPadding"))));
             this.lblUsername.Name = "lblUsername";
-            this.lblUsername.Size = new System.Drawing.Size(58, 13);
-            this.lblUsername.TabIndex = 4;
-            this.lblUsername.Text = "Username:";
             // 
             // lblPassword
             // 
-            this.lblPassword.AutoSize = true;
-            this.lblPassword.Location = new System.Drawing.Point(126, 281);
+            resources.ApplyResources(this.lblPassword, "lblPassword");
+            this.errorLogin.SetError(this.lblPassword, resources.GetString("lblPassword.Error"));
+            this.lblPassword.ForeColor = System.Drawing.Color.White;
+            this.errorLogin.SetIconAlignment(this.lblPassword, ((System.Windows.Forms.ErrorIconAlignment)(resources.GetObject("lblPassword.IconAlignment"))));
+            this.errorLogin.SetIconPadding(this.lblPassword, ((int)(resources.GetObject("lblPassword.IconPadding"))));
             this.lblPassword.Name = "lblPassword";
-            this.lblPassword.Size = new System.Drawing.Size(56, 13);
-            this.lblPassword.TabIndex = 5;
-            this.lblPassword.Text = "Password:";
             // 
             // lblError
             // 
-            this.lblError.AutoSize = true;
+            resources.ApplyResources(this.lblError, "lblError");
+            this.errorLogin.SetError(this.lblError, resources.GetString("lblError.Error"));
             this.lblError.ForeColor = System.Drawing.Color.Red;
-            this.lblError.Location = new System.Drawing.Point(150, 216);
+            this.errorLogin.SetIconAlignment(this.lblError, ((System.Windows.Forms.ErrorIconAlignment)(resources.GetObject("lblError.IconAlignment"))));
+            this.errorLogin.SetIconPadding(this.lblError, ((int)(resources.GetObject("lblError.IconPadding"))));
             this.lblError.Name = "lblError";
-            this.lblError.Size = new System.Drawing.Size(0, 13);
-            this.lblError.TabIndex = 6;
+            // 
+            // logo
+            // 
+            resources.ApplyResources(this.logo, "logo");
+            this.errorLogin.SetError(this.logo, resources.GetString("logo.Error"));
+            this.errorLogin.SetIconAlignment(this.logo, ((System.Windows.Forms.ErrorIconAlignment)(resources.GetObject("logo.IconAlignment"))));
+            this.errorLogin.SetIconPadding(this.logo, ((int)(resources.GetObject("logo.IconPadding"))));
+            this.logo.Image = global::PoliceComputer.Properties.Resources.logo1invert;
+            this.logo.Name = "logo";
+            this.logo.TabStop = false;
             // 
             // loginForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(484, 376);
+            this.BackColor = System.Drawing.Color.Black;
             this.Controls.Add(this.lblError);
             this.Controls.Add(this.lblPassword);
             this.Controls.Add(this.lblUsername);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.logo);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.txtUsername);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.HelpButton = true;
+            this.MaximizeBox = false;
             this.Name = "loginForm";
-            this.Text = "Login";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorLogin)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.logo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -138,7 +142,7 @@
         private System.Windows.Forms.TextBox txtUsername;
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.TextBox txtPassword;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox logo;
         private System.Windows.Forms.ErrorProvider errorLogin;
         private System.Windows.Forms.Label lblError;
         private System.Windows.Forms.Label lblPassword;

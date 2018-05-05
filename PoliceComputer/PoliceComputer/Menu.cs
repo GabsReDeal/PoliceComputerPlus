@@ -37,5 +37,10 @@ namespace PoliceComputer
             form.Closed += (s, args) => this.Close();
             form.Show();
         }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

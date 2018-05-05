@@ -26,9 +26,12 @@ K:\Assignments\Projects\PoliceComputer\PoliceComputer\obj\Debug\PoliceComputer.c
 K:\Assignments\Projects\PoliceComputer\PoliceComputer\obj\Debug\PoliceComputer.loginForm.resources
 K:\Assignments\Projects\PoliceComputer\PoliceComputer\obj\Debug\PoliceComputer.Properties.Resources.resources
 K:\Assignments\Projects\PoliceComputer\PoliceComputer\obj\Debug\PoliceComputer.csproj.GenerateResource.Cache
-K:\Assignments\Projects\PoliceComputer\PoliceComputer\obj\Debug\PoliceComputer.csproj.CoreCompileInputs.cache
 K:\Assignments\Projects\PoliceComputer\PoliceComputer\obj\Debug\PoliceComputer.exe
 K:\Assignments\Projects\PoliceComputer\PoliceComputer\obj\Debug\PoliceComputer.pdb
 K:\Assignments\Projects\PoliceComputer\PoliceComputer\obj\Debug\PoliceComputer.Civilian.resources
 K:\Assignments\Projects\PoliceComputer\PoliceComputer\obj\Debug\PoliceComputer.Menu.resources
-K:\Assignments\Projects\PoliceComputer\PoliceComputer\obj\Debug\PoliceComputer.csproj.CopyComplete
+K:\Assignments\Projects\PoliceComputer\PoliceComputer\bin\Debug\en-MT\PoliceComputer.resources.dll
+K:\Assignments\Projects\PoliceComputer\PoliceComputer\obj\Debug\PoliceComputer.loginForm.en-MT.resources
+K:\Assignments\Projects\PoliceComputer\PoliceComputer\obj\Debug\en-MT\PoliceComputer.resources.dll
+K:\Assignments\Projects\PoliceComputer\PoliceComputer\obj\Debug\PoliceComputer.Vehicle.resources
+K:\Assignments\Projects\PoliceComputer\PoliceComputer\obj\Debug\PoliceComputer.Licence.resources

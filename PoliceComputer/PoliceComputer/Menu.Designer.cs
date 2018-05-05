@@ -35,11 +35,13 @@
             this.vehicleToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.licenceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
             // 
+            this.menuStrip1.BackColor = System.Drawing.Color.DimGray;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.searchByToolStripMenuItem,
             this.helpToolStripMenuItem});
@@ -54,6 +56,7 @@
             this.searchByToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.civilianToolStripMenuItem,
             this.exitToolStripMenuItem});
+            this.searchByToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.searchByToolStripMenuItem.Name = "searchByToolStripMenuItem";
             this.searchByToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
             this.searchByToolStripMenuItem.Text = "File";
@@ -62,48 +65,60 @@
             // 
             this.civilianToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.civilianIDToolStripMenuItem,
-            this.vehicleToolStripMenuItem1});
+            this.vehicleToolStripMenuItem1,
+            this.licenceToolStripMenuItem});
             this.civilianToolStripMenuItem.Name = "civilianToolStripMenuItem";
-            this.civilianToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.civilianToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.civilianToolStripMenuItem.Text = "Search by...";
             this.civilianToolStripMenuItem.Click += new System.EventHandler(this.civilianToolStripMenuItem_Click);
             // 
             // civilianIDToolStripMenuItem
             // 
             this.civilianIDToolStripMenuItem.Name = "civilianIDToolStripMenuItem";
-            this.civilianIDToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.civilianIDToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.civilianIDToolStripMenuItem.Text = "Civilian";
             this.civilianIDToolStripMenuItem.Click += new System.EventHandler(this.civilianIDToolStripMenuItem_Click);
             // 
             // vehicleToolStripMenuItem1
             // 
             this.vehicleToolStripMenuItem1.Name = "vehicleToolStripMenuItem1";
-            this.vehicleToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.vehicleToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
             this.vehicleToolStripMenuItem1.Text = "Vehicle";
             this.vehicleToolStripMenuItem1.Click += new System.EventHandler(this.vehicleToolStripMenuItem1_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.exitToolStripMenuItem.Text = "Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // helpToolStripMenuItem
             // 
+            this.helpToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
             this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
             this.helpToolStripMenuItem.Text = "Help";
+            // 
+            // licenceToolStripMenuItem
+            // 
+            this.licenceToolStripMenuItem.Name = "licenceToolStripMenuItem";
+            this.licenceToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.licenceToolStripMenuItem.Text = "Licence";
             // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(316, 284);
             this.Controls.Add(this.menuStrip1);
+            this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MainMenuStrip = this.menuStrip1;
+            this.MaximizeBox = false;
             this.Name = "Menu";
-            this.Text = "Menu";
+            this.Text = "Main Menu";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -120,5 +135,6 @@
         private System.Windows.Forms.ToolStripMenuItem vehicleToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem licenceToolStripMenuItem;
     }
 }
