@@ -117,4 +117,22 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="label3.Text" xml:space="preserve">
+    <value>When searching by vehicle, you must enter a valid licence plate.
+A valid licence plate consists of 3 letters and 3 digits.
+
+There should also be a space between the letters and digits.
+
+Good: ABC 123                Bad: ABC123</value>
+  </data>
+  <data name="label7.Text" xml:space="preserve">
+    <value>Using DotNetBrowser to access Google Maps
+
+Once the map loads, just type in the location and it will be
+shown on the map.
+
+It may take some time to load the map, please be patient.
+
+Note: The map licence may expire in early June 2018</value>
+  </data>
 </root>

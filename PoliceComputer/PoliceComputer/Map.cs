@@ -30,7 +30,10 @@ namespace PoliceComputer
 
         private void menuToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            var form = new Menu();
+            form.Closed += (s, args) => this.Close();
+            form.Show();
         }
 
         private void civilianIDToolStripMenuItem_Click(object sender, EventArgs e)

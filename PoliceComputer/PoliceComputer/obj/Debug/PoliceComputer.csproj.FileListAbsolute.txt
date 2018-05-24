@@ -67,3 +67,17 @@ I:\Assignments\Projects\PoliceComputer\PoliceComputer\bin\Debug\Newtonsoft.Json.
 I:\Assignments\Projects\PoliceComputer\PoliceComputer\obj\Debug\PoliceComputer.Map.resources
 I:\Assignments\Projects\PoliceComputer\PoliceComputer\obj\Debug\PoliceComputer.Help.resources
 K:\Assignments\Projects\PoliceComputer\PoliceComputer\obj\Debug\PoliceComputer.Help.resources
+D:\Assignments\Projects\PoliceComputer\PoliceComputer\bin\Debug\en-MT\PoliceComputer.resources.dll
+D:\Assignments\Projects\PoliceComputer\PoliceComputer\bin\Debug\DotNetBrowser.Chromium.dll
+D:\Assignments\Projects\PoliceComputer\PoliceComputer\bin\Debug\DotNetBrowser.dll
+D:\Assignments\Projects\PoliceComputer\PoliceComputer\bin\Debug\Google.Maps.dll
+D:\Assignments\Projects\PoliceComputer\PoliceComputer\bin\Debug\Newtonsoft.Json.dll
+D:\Assignments\Projects\PoliceComputer\PoliceComputer\bin\Debug\Newtonsoft.Json.xml
+D:\Assignments\Projects\PoliceComputer\PoliceComputer\obj\Debug\PoliceComputer.Civilian.resources
+D:\Assignments\Projects\PoliceComputer\PoliceComputer\obj\Debug\PoliceComputer.Help.resources
+D:\Assignments\Projects\PoliceComputer\PoliceComputer\obj\Debug\PoliceComputer.Licence.resources
+D:\Assignments\Projects\PoliceComputer\PoliceComputer\obj\Debug\PoliceComputer.Map.resources
+D:\Assignments\Projects\PoliceComputer\PoliceComputer\obj\Debug\PoliceComputer.Menu.resources
+D:\Assignments\Projects\PoliceComputer\PoliceComputer\obj\Debug\PoliceComputer.Vehicle.resources
+D:\Assignments\Projects\PoliceComputer\PoliceComputer\obj\Debug\PoliceComputer.loginForm.en-MT.resources
+D:\Assignments\Projects\PoliceComputer\PoliceComputer\obj\Debug\en-MT\PoliceComputer.resources.dll

@@ -176,5 +176,20 @@
   <ItemGroup>
     <EmbeddedResource Include="teamdev.licenses" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0162574M.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0222096M.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0235643M.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0235645M.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2254374M.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
