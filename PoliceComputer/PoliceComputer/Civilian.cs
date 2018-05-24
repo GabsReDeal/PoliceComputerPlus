@@ -51,16 +51,16 @@ namespace PoliceComputer
             object tst = Properties.Resources.ResourceManager.GetObject("_" + id);
             profilePicture.Image = (Image)tst;
 
-            if (Methods.IsDriver(id))
+            if(Methods.GetInformation("tbl_civilian", "ID", id, "Arrest_Warrant") == "True")
             {
-                //btnLicence.Enabled = true;
-                btnLicence.Show();
+                lblWarrant.Show();
+                lblWarrant.BackColor = Color.Red;
             }
             else
             {
-                //btnLicence.Enabled = false;
-                btnLicence.Hide();
+                lblWarrant.Hide();
             }
+
         }
 
         private void Civilian_Load(object sender, EventArgs e)
@@ -82,6 +82,44 @@ namespace PoliceComputer
         {
             this.Hide();
             var form = new Vehicle();
+            form.Closed += (s, args) => this.Close();
+            form.Show();
+        }
+
+        private void txtSearch_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                Search();
+            }
+        }
+
+        private void licenceToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            var form = new Licence();
+            form.Closed += (s, args) => this.Close();
+            form.Show();
+        }
+
+        private void mapToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            var form = new Map();
+            form.Closed += (s, args) => this.Close();
+            form.Show();
+        }
+
+        private void helpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var form = new Help();
+            form.Show();
+        }
+
+        private void menuToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            var form = new Menu();
             form.Closed += (s, args) => this.Close();
             form.Show();
         }

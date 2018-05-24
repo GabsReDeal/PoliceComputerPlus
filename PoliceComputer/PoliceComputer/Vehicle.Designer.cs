@@ -33,7 +33,6 @@
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.pnlResult = new System.Windows.Forms.Panel();
             this.txtPlate = new System.Windows.Forms.TextBox();
-            this.btnLicence = new System.Windows.Forms.Button();
             this.lblID = new System.Windows.Forms.Label();
             this.lblMake = new System.Windows.Forms.Label();
             this.lblModel = new System.Windows.Forms.Label();
@@ -45,7 +44,6 @@
             this.txtYear = new System.Windows.Forms.TextBox();
             this.txtModel = new System.Windows.Forms.TextBox();
             this.txtMake = new System.Windows.Forms.TextBox();
-            this.lblStatus = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.searchByToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.civilianToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -54,6 +52,8 @@
             this.licenceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mapToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pnlResult.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -84,11 +84,11 @@
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(173, 20);
             this.txtSearch.TabIndex = 31;
+            this.txtSearch.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSearch_KeyPress);
             // 
             // pnlResult
             // 
             this.pnlResult.Controls.Add(this.txtPlate);
-            this.pnlResult.Controls.Add(this.btnLicence);
             this.pnlResult.Controls.Add(this.lblID);
             this.pnlResult.Controls.Add(this.lblMake);
             this.pnlResult.Controls.Add(this.lblModel);
@@ -100,7 +100,6 @@
             this.pnlResult.Controls.Add(this.txtYear);
             this.pnlResult.Controls.Add(this.txtModel);
             this.pnlResult.Controls.Add(this.txtMake);
-            this.pnlResult.Controls.Add(this.lblStatus);
             this.pnlResult.Location = new System.Drawing.Point(12, 101);
             this.pnlResult.Name = "pnlResult";
             this.pnlResult.Size = new System.Drawing.Size(767, 336);
@@ -114,18 +113,6 @@
             this.txtPlate.ReadOnly = true;
             this.txtPlate.Size = new System.Drawing.Size(119, 20);
             this.txtPlate.TabIndex = 13;
-            // 
-            // btnLicence
-            // 
-            this.btnLicence.BackColor = System.Drawing.Color.White;
-            this.btnLicence.ForeColor = System.Drawing.Color.Black;
-            this.btnLicence.Location = new System.Drawing.Point(541, 298);
-            this.btnLicence.Name = "btnLicence";
-            this.btnLicence.Size = new System.Drawing.Size(115, 23);
-            this.btnLicence.TabIndex = 25;
-            this.btnLicence.Text = "Licence Information";
-            this.btnLicence.UseVisualStyleBackColor = false;
-            this.btnLicence.Click += new System.EventHandler(this.btnLicence_Click);
             // 
             // lblID
             // 
@@ -176,7 +163,7 @@
             this.lblColour.AutoSize = true;
             this.lblColour.BackColor = System.Drawing.Color.Black;
             this.lblColour.ForeColor = System.Drawing.Color.White;
-            this.lblColour.Location = new System.Drawing.Point(45, 183);
+            this.lblColour.Location = new System.Drawing.Point(42, 183);
             this.lblColour.Name = "lblColour";
             this.lblColour.Size = new System.Drawing.Size(37, 13);
             this.lblColour.TabIndex = 4;
@@ -184,7 +171,7 @@
             // 
             // txtOwner
             // 
-            this.txtOwner.Location = new System.Drawing.Point(526, 176);
+            this.txtOwner.Location = new System.Drawing.Point(526, 180);
             this.txtOwner.Name = "txtOwner";
             this.txtOwner.ReadOnly = true;
             this.txtOwner.Size = new System.Drawing.Size(143, 20);
@@ -192,7 +179,7 @@
             // 
             // txtColour
             // 
-            this.txtColour.Location = new System.Drawing.Point(85, 180);
+            this.txtColour.Location = new System.Drawing.Point(82, 180);
             this.txtColour.Name = "txtColour";
             this.txtColour.ReadOnly = true;
             this.txtColour.Size = new System.Drawing.Size(143, 20);
@@ -203,7 +190,7 @@
             this.lblOwner.AutoSize = true;
             this.lblOwner.BackColor = System.Drawing.Color.Black;
             this.lblOwner.ForeColor = System.Drawing.Color.White;
-            this.lblOwner.Location = new System.Drawing.Point(428, 179);
+            this.lblOwner.Location = new System.Drawing.Point(428, 183);
             this.lblOwner.Name = "lblOwner";
             this.lblOwner.Size = new System.Drawing.Size(92, 13);
             this.lblOwner.TabIndex = 8;
@@ -233,23 +220,13 @@
             this.txtMake.Size = new System.Drawing.Size(143, 20);
             this.txtMake.TabIndex = 14;
             // 
-            // lblStatus
-            // 
-            this.lblStatus.AutoSize = true;
-            this.lblStatus.BackColor = System.Drawing.Color.Black;
-            this.lblStatus.ForeColor = System.Drawing.Color.White;
-            this.lblStatus.Location = new System.Drawing.Point(605, 29);
-            this.lblStatus.Name = "lblStatus";
-            this.lblStatus.Size = new System.Drawing.Size(37, 13);
-            this.lblStatus.TabIndex = 11;
-            this.lblStatus.Text = "Status";
-            // 
             // menuStrip1
             // 
             this.menuStrip1.BackColor = System.Drawing.Color.DimGray;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.searchByToolStripMenuItem,
-            this.helpToolStripMenuItem});
+            this.helpToolStripMenuItem,
+            this.mapToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(791, 24);
@@ -259,6 +236,7 @@
             // searchByToolStripMenuItem
             // 
             this.searchByToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menuToolStripMenuItem,
             this.civilianToolStripMenuItem,
             this.exitToolStripMenuItem});
             this.searchByToolStripMenuItem.ForeColor = System.Drawing.Color.White;
@@ -293,8 +271,9 @@
             // licenceToolStripMenuItem
             // 
             this.licenceToolStripMenuItem.Name = "licenceToolStripMenuItem";
-            this.licenceToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
+            this.licenceToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.licenceToolStripMenuItem.Text = "Licence";
+            this.licenceToolStripMenuItem.Click += new System.EventHandler(this.licenceToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
@@ -309,12 +288,29 @@
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
             this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
             this.helpToolStripMenuItem.Text = "Help";
+            this.helpToolStripMenuItem.Click += new System.EventHandler(this.helpToolStripMenuItem_Click);
+            // 
+            // mapToolStripMenuItem
+            // 
+            this.mapToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.mapToolStripMenuItem.Name = "mapToolStripMenuItem";
+            this.mapToolStripMenuItem.Size = new System.Drawing.Size(43, 20);
+            this.mapToolStripMenuItem.Text = "Map";
+            this.mapToolStripMenuItem.Click += new System.EventHandler(this.mapToolStripMenuItem_Click);
+            // 
+            // menuToolStripMenuItem
+            // 
+            this.menuToolStripMenuItem.Name = "menuToolStripMenuItem";
+            this.menuToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.menuToolStripMenuItem.Text = "Menu";
+            this.menuToolStripMenuItem.Click += new System.EventHandler(this.menuToolStripMenuItem_Click);
             // 
             // Vehicle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(791, 525);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.lblError);
@@ -324,6 +320,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "Vehicle";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Search by Licence Plate";
             this.pnlResult.ResumeLayout(false);
             this.pnlResult.PerformLayout();
@@ -341,7 +338,6 @@
         private System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.Panel pnlResult;
         private System.Windows.Forms.TextBox txtPlate;
-        private System.Windows.Forms.Button btnLicence;
         private System.Windows.Forms.Label lblID;
         private System.Windows.Forms.Label lblMake;
         private System.Windows.Forms.Label lblModel;
@@ -353,7 +349,6 @@
         private System.Windows.Forms.TextBox txtYear;
         private System.Windows.Forms.TextBox txtModel;
         private System.Windows.Forms.TextBox txtMake;
-        private System.Windows.Forms.Label lblStatus;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem searchByToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem civilianToolStripMenuItem;
@@ -362,5 +357,7 @@
         private System.Windows.Forms.ToolStripMenuItem licenceToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mapToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem menuToolStripMenuItem;
     }
 }

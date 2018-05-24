@@ -1,0 +1,13 @@
+K:\Assignments\Projects\PoliceComputer\UnitTestProject\obj\Debug\UnitTestProject.csprojResolveAssemblyReference.cache
+K:\Assignments\Projects\PoliceComputer\UnitTestProject\bin\Debug\UnitTestProject.dll
+K:\Assignments\Projects\PoliceComputer\UnitTestProject\bin\Debug\UnitTestProject.pdb
+K:\Assignments\Projects\PoliceComputer\UnitTestProject\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+K:\Assignments\Projects\PoliceComputer\UnitTestProject\bin\Debug\PoliceComputer.exe
+K:\Assignments\Projects\PoliceComputer\UnitTestProject\bin\Debug\MySql.Data.dll
+K:\Assignments\Projects\PoliceComputer\UnitTestProject\bin\Debug\DotNetBrowser.dll
+K:\Assignments\Projects\PoliceComputer\UnitTestProject\bin\Debug\DotNetBrowser.Chromium.dll
+K:\Assignments\Projects\PoliceComputer\UnitTestProject\bin\Debug\PoliceComputer.pdb
+K:\Assignments\Projects\PoliceComputer\UnitTestProject\bin\Debug\MySql.Data.xml
+K:\Assignments\Projects\PoliceComputer\UnitTestProject\bin\Debug\en-MT\PoliceComputer.resources.dll
+K:\Assignments\Projects\PoliceComputer\UnitTestProject\obj\Debug\UnitTestProject.dll
+K:\Assignments\Projects\PoliceComputer\UnitTestProject\obj\Debug\UnitTestProject.pdb

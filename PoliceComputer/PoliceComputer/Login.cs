@@ -43,7 +43,7 @@ namespace PoliceComputer
 
                     if (reader.HasRows)
                     {
-                        MessageBox.Show("You have successfully logged in!");
+                        //MessageBox.Show("You have successfully logged in!");
                         this.Hide();
                         var menuForm = new Menu();
                         menuForm.Closed += (s, args) => this.Close();
@@ -65,6 +65,7 @@ namespace PoliceComputer
         public loginForm()
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.CenterScreen;
         }
 
         private void Form1_Load(object sender, EventArgs e)

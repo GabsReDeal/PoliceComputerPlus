@@ -66,5 +66,43 @@ namespace PoliceComputer
         {
 
         }
+
+        private void txtSearch_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                Search();
+            }
+        }
+
+        private void licenceToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            var form = new Licence();
+            form.Closed += (s, args) => this.Close();
+            form.Show();
+        }
+
+        private void mapToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            var form = new Map();
+            form.Closed += (s, args) => this.Close();
+            form.Show();
+        }
+
+        private void helpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var form = new Help();
+            form.Show();
+        }
+
+        private void menuToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            var form = new Menu();
+            form.Closed += (s, args) => this.Close();
+            form.Show();
+        }
     }
 }
