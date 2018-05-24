@@ -2,6 +2,11 @@
     session_start();
     require("menu.php");
     require_once("functions.php");
+
+    if (isset($_SESSION['logged_user']))
+    {
+        header("Location: index.php");
+    }
 ?>
 
 <div class="container">
@@ -24,16 +29,13 @@
                     <div class="row">
                         <div class="col-lg-12">
                             <?php
-                                if (isset($_SESSION['logged_user']))
-                                {
-                                    header("Location: index.php");
-                                }
+                                
 
                                 if(isset($_POST['submit']))
                                 {
                                     if((empty($_POST['username'])))
                                     {
-                                        echo "<span class='alert alert-danger'>Please input your ID including 7 digits and a letter!</span>";
+                                        echo "<div class='alert alert-danger'>Please input your ID including 7 digits and a letter!</div>";
                                     }  
                                     else
                                     {
@@ -62,6 +64,7 @@
 
                                             echo "<div class='alert alert-success'>Your account has been created.<br/>You will recieve a temporary password by mail.</div>";
                                             echo "Password for testing purposes: $password";
+                                            //header("Location: login.php");
                                         }
                                         else
                                         {

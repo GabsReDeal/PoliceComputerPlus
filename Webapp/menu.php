@@ -9,6 +9,14 @@
     <meta name="description" content="">
     <meta name="author" content="GabsReDeal">
 
+    <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#3b3b3b">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
     <title>Police Computer +</title>
 
     <link href="css/style.css" rel="stylesheet">
@@ -19,8 +27,8 @@
 <body>
     <!-- Navigation -->
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-3 mb-5">
-        <a class="navbar-brand" href="index.php">ICON!!</a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-2 mb-5">
+        <a class="navbar-brand pl-4" href="index.php"><img src="images/favicon/favicon.ico"/></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>

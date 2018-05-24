@@ -48,7 +48,7 @@
                                 {
                                     if((empty($_POST['username'])) || (empty($_POST['password'])))
                                     {
-                                        echo "<span class='alert alert-danger'>Please input both username and password!</span>";
+                                        echo "<div class='alert alert-danger'>Please input both username and password!</div>";
                                     }  
                                     else
                                     {
